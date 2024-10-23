@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseSeeder extends Seeder
 {
@@ -12,10 +13,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        DB::Statement("SET FOREIGN_KEY_CHECKS=0;");
         $this->call([
             GenderSeeder::class,
         ]);
 
+        if (app()->isProduction()) {
+            DB::Statement("SET FOREIGN_KEY_CHECKS=1;");
+            return;
+        }
         // DEMO DATA
         $this->call([
             UserAndTeamSeeder::class,
@@ -23,6 +29,7 @@ class DatabaseSeeder extends Seeder
 
             // TreeSeeder::class,
         ]);
+        DB::Statement("SET FOREIGN_KEY_CHECKS=1;");
 
         // -----------------------------------------------------------------------
         // if you want to use the application in production, please remove :
