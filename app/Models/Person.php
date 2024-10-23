@@ -158,7 +158,7 @@ class Person extends Model implements HasMedia
     /* -------------------------------------------------------------------------------------------- */
     protected function getNameAttribute(): ?string
     {
-        return implode(' ', array_filter([$this->firstname, $this->surname]));
+        return implode(' ', array_filter(app()->getLocale() == 'vn' ? [$this->surname, $this->firstname] : [$this->firstname, $this->surname]));
     }
 
     protected function getAgeAttribute(): ?int
