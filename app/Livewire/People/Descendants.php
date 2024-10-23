@@ -47,7 +47,7 @@ class Descendants extends Component
 
                 UNION ALL
 
-                SELECT p.id, p.firstname, p.surname, p.sex, p.father_id, p.mother_id, p.dod, p.yod, p.team_id, p.photo, p.dob, p.yob, 
+                SELECT p.id, p.firstname, p.surname, p.sex, p.father_id, p.mother_id, p.dod, p.yod, p.team_id, p.photo, p.dob, p.yob,
                     degree + 1 AS degree,
                     CAST(CONCAT(d.sequence, ',', p.id) AS CHAR(1024)) AS sequence
                 FROM people p, descendants d
@@ -76,6 +76,11 @@ class Descendants extends Component
         if ($this->count > $this->count_min) {
             $this->count--;
         }
+    }
+
+    public function getNameProperty()
+    {
+        return $this->person->name;
     }
 
     // ------------------------------------------------------------------------------

@@ -37,23 +37,23 @@ class Ancestors extends Component
     public function mount(): void
     {
         $this->ancestors = collect(DB::select("
-            WITH RECURSIVE ancestors AS ( 
-	            SELECT 
-                    id, firstname, surname, sex, father_id, mother_id, dod, yod, team_id, photo, 
+            WITH RECURSIVE ancestors AS (
+	            SELECT
+                    id, firstname, surname, sex, father_id, mother_id, dod, yod, team_id, photo,
 		            0 AS degree,
                     CAST(id AS CHAR(1024)) AS sequence
-	            FROM people  
-	            WHERE deleted_at IS NULL AND id = '" . $this->person->id . "' 
-    
-	            UNION ALL 
-    
+	            FROM people
+	            WHERE deleted_at IS NULL AND id = '" . $this->person->id . "'
+
+	            UNION ALL
+
 	            SELECT p.id, p.firstname, p.surname, p.sex, p.father_id, p.mother_id, p.dod, p.yod, p.team_id, p.photo,
 		            degree + 1 AS degree,
                     CAST(CONCAT(a.sequence, ',', p.id) AS CHAR(1024)) AS sequence
-	            FROM people p, ancestors a 
+	            FROM people p, ancestors a
 	            WHERE deleted_at IS NULL AND (p.id = a.father_id OR p.id = a.mother_id) AND degree < '" . $this->count_max - 1 . "'
-            ) 
-        
+            )
+
             SELECT * FROM ancestors ORDER BY degree, sex DESC;
         "));
 
@@ -76,6 +76,11 @@ class Ancestors extends Component
         if ($this->count > $this->count_min) {
             $this->count--;
         }
+    }
+
+    public function getNameProperty()
+    {
+        return $this->person->name;
     }
 
     // ------------------------------------------------------------------------------
