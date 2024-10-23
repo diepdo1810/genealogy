@@ -30,7 +30,7 @@
                     'text-danger-600 dark:text-danger-400' => ($person->dod or $person->yod),
                     'text-primary-500 dark:text-primary-300' => !($person->dod or $person->yod)
                 ])>
-                    {{ $this->name }}
+                    {{ implode(' ', array_filter(app()->getLocale() == 'vn' ? [$person->surname, $person->firstname] : [$person->firstname, $person->surname])) }}
                 </figcaption>
             </figure>
         </x-link>

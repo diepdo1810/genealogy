@@ -78,11 +78,6 @@ class Ancestors extends Component
         }
     }
 
-    public function getNameProperty()
-    {
-        return $this->person->name;
-    }
-
     // ------------------------------------------------------------------------------
     public function render(): View
     {
