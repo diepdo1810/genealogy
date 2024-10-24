@@ -77,6 +77,13 @@
                 </div>
                 <x-hr.narrow class="col-span-6 !my-0" />
 
+                {{-- country --}}
+                <div class="col-span-6">
+                    <x-ts-select.styled wire:model="personForm.country" id="country" label="{{ __('person.country') }} :" :options="$personForm->countries()" select="label:name|value:iso2"
+                                        placeholder="{{ __('app.select') }} ..." wire:dirty.class="bg-warning-200 dark:text-black" searchable />
+                </div>
+                <x-hr.narrow class="col-span-6 !my-0" />
+
                 {{-- images --}}
                 <div class="col-span-6">
                     <x-ts-upload id="photos" wire:model="photos" label="{{ __('person.photos') }} :" accept=".jpeg, .jpg, .gif, .png, .svg, .webp"

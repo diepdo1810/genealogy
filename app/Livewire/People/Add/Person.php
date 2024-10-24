@@ -31,11 +31,11 @@ class Person extends Component
     public function mount(): void
     {
         $this->personForm->firstname = null;
-        $this->personForm->surname   = null;
+        $this->personForm->surname = null;
         $this->personForm->birthname = null;
-        $this->personForm->nickname  = null;
+        $this->personForm->nickname = null;
 
-        $this->personForm->sex       = null;
+        $this->personForm->sex = null;
         $this->personForm->gender_id = null;
 
         $this->personForm->yob = null;
@@ -43,6 +43,8 @@ class Person extends Component
         $this->personForm->pob = null;
 
         $this->personForm->photo = null;
+
+        $this->personForm->country = null;
     }
 
     public function deleteUpload(array $content): void
@@ -59,20 +61,20 @@ class Person extends Component
         ]
         */
 
-        if (! $this->photos) {
+        if (!$this->photos) {
             return;
         }
 
         $files = Arr::wrap($this->photos);
 
         /** @var UploadedFile $file */
-        $file = collect($files)->filter(fn (UploadedFile $item) => $item->getFilename() === $content['temporary_name'])->first();
+        $file = collect($files)->filter(fn(UploadedFile $item) => $item->getFilename() === $content['temporary_name'])->first();
 
         // here we delete the file.
         // even if we have a error here, we simply ignore it because as long as the file is not persisted, it is temporary and will be deleted at some point if there is a failure here
-        rescue(fn () => $file->delete(), report: false);
+        rescue(fn() => $file->delete(), report: false);
 
-        $collect = collect($files)->filter(fn (UploadedFile $item) => $item->getFilename() !== $content['temporary_name']);
+        $collect = collect($files)->filter(fn(UploadedFile $item) => $item->getFilename() !== $content['temporary_name']);
 
         // we guarantee restore of remaining files regardless of upload type, whether you are dealing with multiple or single uploads
         $this->photos = is_array($this->photos) ? $collect->toArray() : $collect->first();
@@ -86,7 +88,7 @@ class Person extends Component
 
     public function updatedPhotos(): void
     {
-        if (! $this->photos) {
+        if (!$this->photos) {
             return;
         }
 
@@ -94,7 +96,7 @@ class Person extends Component
         $file = Arr::flatten(array_merge($this->backup, [$this->photos]));
 
         // we finishing by removing the duplicates
-        $this->photos = collect($file)->unique(fn (UploadedFile $item) => $item->getClientOriginalName())->toArray();
+        $this->photos = collect($file)->unique(fn(UploadedFile $item) => $item->getClientOriginalName())->toArray();
     }
 
     public function savePerson()
@@ -104,15 +106,16 @@ class Person extends Component
 
             $new_person = \App\Models\Person::create([
                 'firstname' => $validated['firstname'],
-                'surname'   => $validated['surname'],
+                'surname' => $validated['surname'],
                 'birthname' => $validated['birthname'],
-                'nickname'  => $validated['nickname'],
-                'sex'       => $validated['sex'],
+                'nickname' => $validated['nickname'],
+                'sex' => $validated['sex'],
                 'gender_id' => $validated['gender_id'] ?? null,
-                'yob'       => $validated['yob'],
-                'dob'       => $validated['dob'],
-                'pob'       => $validated['pob'],
-                'team_id'   => auth()->user()->currentTeam->id,
+                'yob' => $validated['yob'],
+                'dob' => $validated['dob'],
+                'pob' => $validated['pob'],
+                'team_id' => auth()->user()->currentTeam->id,
+                'country' => $validated['country'],
             ]);
 
             if ($this->photos) {
@@ -133,17 +136,18 @@ class Person extends Component
     public function isDirty(): bool
     {
         return
-        $this->personForm->firstname != null or
-        $this->personForm->surname != null or
-        $this->personForm->birthname != null or
-        $this->personForm->nickname != null or
+            $this->personForm->firstname != null or
+            $this->personForm->surname != null or
+            $this->personForm->birthname != null or
+            $this->personForm->nickname != null or
 
-        $this->personForm->sex != null or
-        $this->personForm->gender_id != null or
+            $this->personForm->sex != null or
+            $this->personForm->gender_id != null or
 
-        $this->personForm->yob != null or
-        $this->personForm->dob != null or
-        $this->personForm->pob != null;
+            $this->personForm->yob != null or
+            $this->personForm->dob != null or
+            $this->personForm->pob != null
+            or $this->personForm->country != null;
     }
 
     // ------------------------------------------------------------------------------
