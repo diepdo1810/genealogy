@@ -37,11 +37,29 @@ class PersonForm extends Form
 
     public $photo = null;
 
+    public $country = null;
+
     // -----------------------------------------------------------------------
     #[Computed(persist: true, seconds: 3600, cache: true)]
     public function genders(): Collection
     {
         return Gender::select('id', 'name')->orderBy('name')->get();
+    }
+
+    #[Computed(persist: true, seconds: 3600, cache: true)]
+    public function countries(): Collection
+    {
+        $countries = file_get_contents(base_path('resources/json/countries.json'));
+
+        // get name and iso2
+        $countries = collect(json_decode($countries, true))->map(function ($country) {
+            return [
+                'name' => $country['name'],
+                'iso2' => strtolower($country['iso2']),
+            ];
+        });
+
+        return $countries->sortBy('name');
     }
 
     // -----------------------------------------------------------------------
@@ -72,6 +90,7 @@ class PersonForm extends Form
             'pob' => ['nullable', 'string', 'max:255'],
 
             'photo' => ['nullable', 'string', 'max:255'],
+            'country' => ['nullable', 'string', 'max:255'],
         ];
     }
 
@@ -96,6 +115,7 @@ class PersonForm extends Form
             'pob' => __('person.pob'),
 
             'photo' => __('person.photo'),
+            'country' => __('person.country'),
         ];
     }
 }
