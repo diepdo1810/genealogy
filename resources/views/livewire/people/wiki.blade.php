@@ -7,7 +7,7 @@
                 {{ __('person.wiki') }}
             </div>
             <div class="w-full h-48 overflow-auto touch-auto" style="height: 24rem">
-                {!! $person->wiki !!}
+                {!! $person->content !!}
             </div>
         </div>
     </div>
