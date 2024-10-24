@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('people', function (Blueprint $table) {
-            $table->text('wiki')->nullable()->after('team_id');
+            $table->longText('wiki')->nullable()->after('team_id');
             $table->string('wiki_url')->nullable()->after('wiki');
         });
     }
