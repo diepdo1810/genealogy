@@ -13,6 +13,7 @@ return [
 
     'partner'  => 'Đối tác',
     'partners' => 'Đối tác',
+    'wiki' => 'Tài liệu tham khảo',
 
     'children'      => 'Con cái',
     'parents'       => 'Cha mẹ',
