@@ -13,6 +13,7 @@ return [
 
     'partner'  => 'Partner',
     'partners' => 'Partner',
+    'wiki' => 'Wiki',
 
     'children'      => 'Kinder',
     'parents'       => 'Eltern',

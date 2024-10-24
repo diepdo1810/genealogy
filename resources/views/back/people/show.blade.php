@@ -8,24 +8,47 @@
     </x-slot>
 
     <div class="w-full py-5 space-y-5 overflow-x-auto">
-        <livewire:people.heading :person="$person" />
+        <livewire:people.heading :person="$person"/>
 
         <div class="flex flex-wrap gap-5">
-            <div class="flex flex-col flex-grow gap-5 md:max-w-max">
-                <livewire:people.profile :person="$person" />
+            <div class="hidden xl:block">
+                <div class="flex gap-5">
+                    <div class="flex flex-col flex-grow gap-5 md:max-w-max">
+                        <livewire:people.profile :person="$person"/>
+                    </div>
+                    <div class="flex flex-col flex-grow gap-5 md:max-w-max">
+                        <livewire:people.family :person="$person"/>
+                        <livewire:people.partners :person="$person"/>
+                        <livewire:people.children :person="$person"/>
+                        <livewire:people.siblings :person="$person"/>
+                        <livewire:people.files :person="$person"/>
+                    </div>
+
+                    <div class="flex flex-col flex-grow gap-5 md:max-w-max">
+                        <livewire:people.wiki :person="$person"/>
+                    </div>
+                </div>
             </div>
 
-            <div class="flex flex-col flex-grow gap-5 md:max-w-max">
-                <livewire:people.family :person="$person" />
-                <livewire:people.partners :person="$person" />
-                <livewire:people.children :person="$person" />
-                <livewire:people.siblings :person="$person" />
-                <livewire:people.files :person="$person" />
+            <div class="flex flex-col flex-grow gap-5 md:max-w-max xl:hidden">
+                <livewire:people.profile :person="$person"/>
+            </div>
+
+            <div class="flex flex-col flex-grow gap-5 md:max-w-max xl:hidden">
+                <livewire:people.family :person="$person"/>
+                <livewire:people.partners :person="$person"/>
+                <livewire:people.children :person="$person"/>
+                <livewire:people.siblings :person="$person"/>
+                <livewire:people.files :person="$person"/>
+            </div>
+
+            <div class="flex flex-col flex-grow gap-5 md:max-w-max xl:hidden">
+                <livewire:people.wiki :person="$person"/>
             </div>
 
             <div class="flex flex-col flex-grow gap-5 overflow-x-auto md:max-w-max">
-                <livewire:people.ancestors :person="$person" />
-                <livewire:people.descendants :person="$person" />
+                <livewire:people.ancestors :person="$person"/>
+                <livewire:people.descendants :person="$person"/>
             </div>
         </div>
     </div>

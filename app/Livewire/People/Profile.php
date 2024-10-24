@@ -12,7 +12,6 @@ use TallStackUi\Traits\Interactions;
 class Profile extends Component
 {
     use Interactions;
-
     // -----------------------------------------------------------------------
     public $person;
 

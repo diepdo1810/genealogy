@@ -57,6 +57,9 @@ class Person extends Model implements HasMedia
         'photo',
 
         'team_id',
+
+        'wiki',
+        'wiki_url',
     ];
 
     protected function casts(): array
