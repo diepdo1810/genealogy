@@ -13,14 +13,26 @@ class Wiki extends Component
     public $person;
     public $response;
     public $content;
+    public $url;
 
     public function mount($person): void
     {
         $this->person = $person;
 
-        if (empty($this->person->wiki) && $this->fetchWikiContent()) {
-            $this->person->wiki = $this->content;
-            $this->person->save();
+        $locale = app()->getLocale();
+        if (in_array($locale, config('app.available_locales'))) {
+            $this->url = "https://$locale.wikipedia.org/w/api.php?action=query&format=json";
+        } else {
+            $this->url = "https://en.wikipedia.org/w/api.php?action=query&format=json";
+        }
+        $wiki = $this->person->wiki()->where('lang', $locale)->first();
+
+        if (!$wiki && $this->fetchWikiContent()) {
+            $this->person->wiki()->create([
+                'person_id' => $this->person->id,
+                'lang' => app()->getLocale(),
+                'content' => $this->content ?? '',
+            ]);
         }
     }
 
@@ -44,7 +56,7 @@ class Wiki extends Component
      */
     protected function getWikiPageId(string $name): ?int
     {
-        $wikiUrl = env('WIKI_URL') . '&list=search&formatversion=2&srsearch=' . urlencode($name);
+        $wikiUrl = $this->url . '&list=search&formatversion=2&srsearch=' . urlencode($name);
         $response = Http::get($wikiUrl);
 
         if ($response->failed() || empty($response->json('query.search.0.pageid'))) {
@@ -59,7 +71,7 @@ class Wiki extends Component
      */
     protected function getWikiExtract(int $pageId): ?string
     {
-        $wikiUrl = env('WIKI_URL') . '&prop=extracts&pageids=' . $pageId;
+        $wikiUrl = $this->url . '&prop=extracts&pageids=' . $pageId;
         $response = Http::get($wikiUrl);
 
         if ($response->failed()) {

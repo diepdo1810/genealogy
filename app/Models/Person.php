@@ -57,9 +57,6 @@ class Person extends Model implements HasMedia
         'photo',
 
         'team_id',
-
-        'wiki',
-        'wiki_url',
     ];
 
     protected function casts(): array
@@ -406,6 +403,12 @@ class Person extends Model implements HasMedia
         return $this->HasManyMerged(Person::class, ['father_id', 'mother_id'])->with('children')->orderBy('dob');
     }
 
+    public function wiki(): HasMany
+    {
+        return $this->hasMany(Wiki::class);
+    }
+
+
     /* returns ALL NATURAL CHILDREN (n Person) (OWN + CURRENT PARTNER), ordered by type, birthyear */
     public function childrenNaturalAll(): Collection
     {
@@ -544,5 +547,12 @@ class Person extends Model implements HasMedia
                 return $sibling;
             })->sortBy('birthYear')->sortBy('type');
         }
+    }
+
+    public function getContentAttribute(): string
+    {
+        $wiki = $this->wiki()->where('lang', app()->getLocale())->first();
+
+        return $wiki ? $wiki->content : '';
     }
 }
