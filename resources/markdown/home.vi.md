@@ -6,7 +6,7 @@
 
 ## Bản Demo
 
-<a href="https://genealogy.kreaweb.be/" target="_blank">https://genealogy.kreaweb.be/</a>
+<a href="https://ketnoiso.cyou/" target="_blank">https://genealogy.kreaweb.be/</a>
 
 Bản demo này có các cây phả hệ đã được triển khai, **BRITISH ROYALS** và **KENNEDY**, **Nam Cao**.
 
