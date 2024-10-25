@@ -6,27 +6,27 @@
 
         {{-- social network icons section --}}
         <div class="flex justify-center">
-            <a href="https://www.facebook.com/" class="mr-6 text-neutral-600 dark:text-neutral-200" target="_blank" title="Facebook">
+            <a href="#" class="mr-6 text-neutral-600 dark:text-neutral-200" target="_blank" title="Facebook">
                 <x-ts-icon icon="brand-facebook" class="text-neutral-900 dark:text-neutral-200" />
             </a>
 
-            <a href="https://twitter.com/Kreaweb_be" class="mr-6 text-neutral-600 dark:text-neutral-200" target="_blank" title="X">
+            <a href="#" class="mr-6 text-neutral-600 dark:text-neutral-200" target="_blank" title="X">
                 <x-ts-icon icon="brand-x" class="text-neutral-900 dark:text-neutral-200" />
             </a>
 
-            <a href="https://www.instagram.com/" class="mr-6 text-neutral-600 dark:text-neutral-200" target="_blank" title="Instagram">
+            <a href="#" class="mr-6 text-neutral-600 dark:text-neutral-200" target="_blank" title="Instagram">
                 <x-ts-icon icon="brand-instagram" class="text-neutral-900 dark:text-neutral-200" />
             </a>
 
-            <a href="https://www.linkedin.com/" class="mr-6 text-neutral-600 dark:text-neutral-200" target="_blank" title="LinkedIn">
+            <a href="#" class="mr-6 text-neutral-600 dark:text-neutral-200" target="_blank" title="LinkedIn">
                 <x-ts-icon icon="brand-linkedin" class="text-neutral-900 dark:text-neutral-200" />
             </a>
 
-            <a href="https://www.youtube.com/channel/UClUVszEUeb-nY7qM00ERCHg" class="mr-6 text-neutral-600 dark:text-neutral-200" target="_blank" title="YouTube">
+            <a href="#" class="mr-6 text-neutral-600 dark:text-neutral-200" target="_blank" title="YouTube">
                 <x-ts-icon icon="brand-youtube" class="text-neutral-900 dark:text-neutral-200" />
             </a>
 
-            <a href="https://github.com/MGeurts" class="text-neutral-600 dark:text-neutral-200" target="_blank" title="GitHub">
+            <a href="#" class="text-neutral-600 dark:text-neutral-200" target="_blank" title="GitHub">
                 <x-ts-icon icon="brand-github" class="text-neutral-900 dark:text-neutral-200" />
             </a>
         </div>
