@@ -28,7 +28,7 @@ Nếu bạn nghĩ rằng có bất kỳ vấn đề nào có thể xảy ra liê
 
 ### Luật áp dụng
 
-Khi truy cập trang web này, bạn đồng ý rằng luật pháp của <b>[quốc gia]</b>, không tính đến các nguyên tắc của luật xung đột, sẽ chi phối các điều khoản và điều kiện này hoặc bất kỳ tranh chấp nào có thể phát sinh giữa <b>[tổ chức]</b> và bạn hoặc các đối tác kinh doanh và cộng sự của tổ chức đó.
+Khi truy cập trang web này, bạn đồng ý rằng luật pháp của <b>Việt Nam</b>, không tính đến các nguyên tắc của luật xung đột, sẽ chi phối các điều khoản và điều kiện này hoặc bất kỳ tranh chấp nào có thể phát sinh giữa <b>[tổ chức]</b> và bạn hoặc các đối tác kinh doanh và cộng sự của tổ chức đó.
 
 ### Tranh chấp
 

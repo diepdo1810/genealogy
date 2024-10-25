@@ -1,6 +1,6 @@
 ## Chính sách bảo mật
 
-Trang web này do <b>[tổ chức]</b> điều hành và có địa chỉ đã đăng ký là <b>[địa chỉ]</b>. Chúng tôi cam kết bảo vệ và giữ gìn quyền riêng tư của khách truy cập khi truy cập trang web của chúng tôi hoặc giao tiếp điện tử với chúng tôi.
+Trang web này do <b>[tổ chức]</b> điều hành và có địa chỉ đã đăng ký là <b>Hà Nội, Việt Nam</b>. Chúng tôi cam kết bảo vệ và giữ gìn quyền riêng tư của khách truy cập khi truy cập trang web của chúng tôi hoặc giao tiếp điện tử với chúng tôi.
 
 Chính sách này nêu rõ cách chúng tôi xử lý mọi dữ liệu cá nhân mà chúng tôi thu thập từ bạn hoặc bạn cung cấp cho chúng tôi thông qua trang web của chúng tôi. Chúng tôi xác nhận rằng chúng tôi sẽ giữ thông tin của bạn an toàn và chúng tôi sẽ tuân thủ đầy đủ mọi luật và quy định về Bảo vệ dữ liệu của Vương quốc Anh hiện hành. Vui lòng đọc kỹ những điều sau đây để hiểu những gì sẽ xảy ra với dữ liệu cá nhân mà bạn chọn cung cấp cho chúng tôi hoặc chúng tôi thu thập từ bạn khi bạn truy cập trang web này. Bằng cách truy cập trang web của chúng tôi, bạn chấp nhận và đồng ý với các hoạt động được mô tả trong chính sách này.
 

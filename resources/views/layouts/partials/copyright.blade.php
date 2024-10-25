@@ -5,13 +5,24 @@
         {{ __('app.free_use') }}.
     </div>
 
-    <div class="flex items-center">
+    <div class="flex items-center hidden">
         <div class="px-2 text-right">
             {{ __('app.design_development') }}<br />
             {{ __('app.by') }} <x-link href="https://www.kreaweb.be/" target="_blank">KREAWEB</x-link>
         </div>
 
         <a href="https://www.kreaweb.be/" target="_blank" title="Kreaweb">
+            <x-svg.kreaweb class="size-11 dark:fill-white hover:fill-primary-300 dark:hover:fill-primary-300" alt="kreaweb" />
+        </a>
+    </div>
+
+    <div class="flex items-center">
+        <div class="px-2 text-right">
+            {{ __('app.design_development') }}<br />
+            {{ __('app.by') }} <x-link href="https://ketnoiso.cyou/" target="_blank">diepchiaser</x-link>
+        </div>
+
+        <a href="https://ketnoiso.cyou/" target="_blank" title="Kreaweb">
             <x-svg.kreaweb class="size-11 dark:fill-white hover:fill-primary-300 dark:hover:fill-primary-300" alt="kreaweb" />
         </a>
     </div>

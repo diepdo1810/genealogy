@@ -60,8 +60,6 @@ Người dùng đã xác thực có thể quản lý tài khoản và hồ sơ n
 
 ### c. Nhóm
 
-Ứng dụng này sử dụng <a href="https://jetstream.laravel.com/" target="_blank">Laravel Jetstream</a> với tùy chọn <a href="https://jetstream.laravel.com/features/teams.html" target="_blank">Nhóm</a> để triển khai và thực thi <a href="https://en.wikipedia.org/wiki/Multitenancy" target="_blank">đa thuê bao</a>.
-
 Người dùng đã xác thực có thể quản lý nhóm và cài đặt nhóm của họ bằng cách sử dụng menu thả xuống ở góc trên bên phải của thanh menu.
 
 <img src="img/help/genealogy-004.webp" class="rounded" alt="Cài đặt nhóm">
