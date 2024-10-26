@@ -38,6 +38,7 @@ class Profile extends Component
         $this->profileForm->pob = $this->person->pob;
 
         $this->profileForm->summary = $this->person->summary;
+        $this->profileForm->show_wiki = $this->person->show_wiki;
     }
 
     public function saveProfile()
@@ -73,7 +74,8 @@ class Profile extends Component
         $this->profileForm->dob != ($this->person->dob ? Carbon::parse($this->person->dob)->format('Y-m-d') : null) or
         $this->profileForm->pob != $this->person->pob or
 
-        $this->profileForm->summary != $this->person->summary;
+        $this->profileForm->summary != $this->person->summary
+        or $this->profileForm->show_wiki != $this->person->show_wiki;
     }
 
     // ------------------------------------------------------------------------------
