@@ -37,6 +37,8 @@ class ProfileForm extends Form
 
     public $summary = null;
 
+    public $show_wiki = false;
+
     // -----------------------------------------------------------------------
     #[Computed(persist: true, seconds: 3600, cache: true)]
     public function genders(): Collection
@@ -72,6 +74,7 @@ class ProfileForm extends Form
             'pob' => ['nullable', 'string', 'max:255'],
 
             'summary' => ['nullable', 'string', 'max:65535'],
+            'show_wiki' => ['nullable', 'boolean'],
         ];
     }
 

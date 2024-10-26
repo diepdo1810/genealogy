@@ -39,6 +39,8 @@ class PersonForm extends Form
 
     public $country = null;
 
+    public $show_wiki = false;
+
     // -----------------------------------------------------------------------
     #[Computed(persist: true, seconds: 3600, cache: true)]
     public function genders(): Collection
@@ -91,6 +93,7 @@ class PersonForm extends Form
 
             'photo' => ['nullable', 'string', 'max:255'],
             'country' => ['nullable', 'string', 'max:255'],
+            'show_wiki' => ['nullable', 'boolean'],
         ];
     }
 

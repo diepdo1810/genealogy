@@ -45,6 +45,7 @@ class Person extends Component
         $this->personForm->photo = null;
 
         $this->personForm->country = null;
+        $this->personForm->show_wiki = false;
     }
 
     public function deleteUpload(array $content): void
@@ -116,6 +117,7 @@ class Person extends Component
                 'pob' => $validated['pob'],
                 'team_id' => auth()->user()->currentTeam->id,
                 'country' => $validated['country'],
+                'show_wiki' => $validated['show_wiki'],
             ]);
 
             if ($this->photos) {
@@ -147,7 +149,8 @@ class Person extends Component
             $this->personForm->yob != null or
             $this->personForm->dob != null or
             $this->personForm->pob != null
-            or $this->personForm->country != null;
+            or $this->personForm->country != null
+            or $this->personForm->show_wiki != false;
     }
 
     // ------------------------------------------------------------------------------
