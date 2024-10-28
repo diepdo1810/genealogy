@@ -92,12 +92,11 @@
 
                 {{-- Show Wiki --}}
                 <div class="col-span-3">
-                    <x-label for="show_wiki" class="mr-5" value="{{ __('person.show_wiki') }} :" />
                     <div class="flex items-center mt-3">
-                        <x-checkbox id="show_wiki" wire:model="profileForm.show_wiki" name="show_wiki" />
-                        <label for="show_wiki" class="ml-2 text-sm text-gray-600">
-                            {{ __('person.show_wiki_label') }}
-                        </label>
+                        <x-ts-tooltip :text="__('person.show_wiki_tooltip')" color="red" class="mb-2" />
+                        <x-label for="show_wiki" class="mr-1" value="{{ __('person.show_wiki') }}" />
+                        <x-ts-checkbox color="red" id="show_wiki" wire:model="profileForm.show_wiki" name="show_wiki"
+                                       :checked="$profileForm->show_wiki > 0" />
                     </div>
                 </div>
 

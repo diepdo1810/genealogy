@@ -13,7 +13,11 @@ return [
 
     'partner'  => 'Partner',
     'partners' => 'Partner',
-    'wiki' => 'Wiki',
+
+    // wikipedia
+    'wiki' => 'Wikipedia',
+    'show_wiki' => 'Wikipedia anzeigen',
+    'show_wiki_tooltip' => 'Hinweis: Dieser Abschnitt zeigt nur Referenzinformationen über historische Persönlichkeiten oder Prominente, die in Wikimedia aufgezeichnet wurden.',
 
     'children'      => 'Kinder',
     'parents'       => 'Eltern',

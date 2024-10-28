@@ -28,3 +28,7 @@ This demo has 2 family trees implemented, **BRITISH ROYALS** and **KENNEDY**.
         </tr>
     </tbody>
 </table>
+
+## Latest Release
+- [Genealogy v1.0.0]() (2024-10-28): Update feature (toggle) to show/hide reference documents (wikipedia)
+```

@@ -13,7 +13,12 @@ return [
 
     'partner'  => 'Partner',
     'partners' => 'Partners',
-    'wiki' => 'Wiki',
+
+    // wikipedia
+    'wiki' => 'Wikipedia',
+    'show_wiki' => 'Toon Wikipedia',
+    'show_wiki_tooltip' => 'Opmerking: Dit gedeelte toont alleen referentie-informatie over historische figuren of beroemdheden die zijn vastgelegd in Wikimedia.',
+
 
     'children'      => 'Kinderen',
     'parents'       => 'Ouders',
