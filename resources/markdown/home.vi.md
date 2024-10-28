@@ -1,6 +1,6 @@
-## Chào mừng ...
+## Chào mừng 
 
-**Genealogy** là một ứng dụng phả hệ miễn phí và mã nguồn mở để ghi lại các thành viên gia đình và mối quan hệ của họ.
+**Genealogy** là một ứng dụng phả hệ miễn phí và để ghi lại các thành viên gia đình và mối quan hệ của họ.
 
 <img src="https://genealogy.kreaweb.be/img/help/genealogy-000a.webp" class="rounded" alt="Genealogy-000">
 
@@ -28,3 +28,6 @@ Bản demo này có các cây phả hệ đã được triển khai, **BRITISH R
         </tr>
     </tbody>
 </table>
+
+## Phát hành mới nhất
+- [Genealogy v1.0.0]() (2024-10-28): Cập nhật chức năng (tắt/bật) hiển thị tài liệu tham khảo (wikipedia)

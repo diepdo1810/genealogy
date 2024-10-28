@@ -13,7 +13,11 @@ return [
 
     'partner'  => 'Đối tác',
     'partners' => 'Đối tác',
-    'wiki' => 'Tài liệu tham khảo',
+
+    // wikipedia
+    'wiki' => 'Tài liệu tham khảo (wikipedia)',
+    'show_wiki' => 'Hiển thị tài liệu tham khảo (wikipedia)',
+    'show_wiki_tooltip' => 'Thông báo: Phần này chỉ hiển thị thông tin tham khảo về các nhân vật lịch sử hoặc người nổi tiếng đã được ghi chép trong Wikimedia.',
 
     'children'      => 'Con cái',
     'parents'       => 'Cha mẹ',

@@ -13,7 +13,11 @@ return [
 
     'partner'  => 'Partner',
     'partners' => 'Partners',
-    'wiki' => 'Wiki',
+
+    // wikipedia
+    'wiki' => 'Wikipedia',
+    'show_wiki' => 'Show Wikipedia',
+    'show_wiki_tooltip' => 'Note: This section only shows reference information about historical figures or celebrities that have been recorded in Wikimedia.',
 
     'children'      => 'Children',
     'parents'       => 'Parents',

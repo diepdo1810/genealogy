@@ -94,6 +94,8 @@ return [
     'design_development' => 'Thiết kế & phát triển',
     'by'                 => 'bởi',
 
+    'further_development' => 'Phát triển tiếp theo',
+
     'open_offcanvas' => 'Mở menu offcanvas',
     'enable_light'   => 'Bật chế độ sáng',
     'enable_dark'    => 'Bật chế độ tối',
