@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Tags\Url;
 
 // -----------------------------------------------------------------------------------
 // frontend routes
@@ -102,4 +104,12 @@ Route::get('language/{locale}', function ($locale) {
     session()->put('locale', $locale);
 
     return back();
+});
+
+
+// -----------------------------------------------------------------------------------
+// sitemap
+// -----------------------------------------------------------------------------------
+Route::get('/sitemap', function () {
+    return response()->file(public_path('sitemap.xml'));
 });
