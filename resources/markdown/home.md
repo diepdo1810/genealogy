@@ -4,11 +4,11 @@
 
 <img src="https://genealogy.kreaweb.be/img/help/genealogy-000a.webp" class="rounded" alt="Genealogy-000a">
 
-## Demo
+## Main Instance
 
-<a href="https://genealogy.kreaweb.be/" target="_blank">https://genealogy.kreaweb.be/</a>
+<a href="https://genealogy.kreaweb.be/" target="_blank">https://ketnoiso.cyou/</a>
 
-This demo has 2 family trees implemented, **BRITISH ROYALS** and **KENNEDY**.
+This main has families trees implemented, **BRITISH ROYALS** and **KENNEDY**, **Nam Cao**.
 
 <table>
     <thead>
@@ -31,4 +31,3 @@ This demo has 2 family trees implemented, **BRITISH ROYALS** and **KENNEDY**.
 
 ## Latest Release
 - [Genealogy v1.0.0]() (2024-10-28): Update feature (toggle) to show/hide reference documents (wikipedia)
-```

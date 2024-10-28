@@ -4,11 +4,11 @@
 
 <img src="https://genealogy.kreaweb.be/img/help/genealogy-000a.webp" class="rounded" alt="Genealogy-000">
 
-## Bản Demo
+## Bản chính
 
 <a href="https://ketnoiso.cyou/" target="_blank">https://ketnoiso.cyou/</a>
 
-Bản demo này có các cây phả hệ đã được triển khai, **BRITISH ROYALS** và **KENNEDY**, **Nam Cao**.
+Bản chính này có các cây phả hệ đã được triển khai, **BRITISH ROYALS** và **KENNEDY**, **Nam Cao**.
 
 <table>
     <thead>
