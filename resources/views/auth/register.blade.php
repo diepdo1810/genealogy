@@ -4,7 +4,7 @@
 
 <x-app-layout>
     <x-slot name="heading">
-        {{ __('auth.register') }}
+        <h1 class="text-2xl font-bold">{{ __('auth.register') }}</h1>
     </x-slot>
 
     <x-authentication-card>

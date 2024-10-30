@@ -28,7 +28,8 @@ return [
 
     'failed'                    => 'Thông tin xác thực không khớp với hồ sơ của chúng tôi.',
     'forgot_password'           => 'Quên Mật Khẩu?',
-    'forgot_password_message'   => 'Quên mật khẩu của bạn? Không vấn đề gì. Chỉ cần cho chúng tôi biết địa chỉ email của bạn và chúng tôi sẽ gửi cho bạn một liên kết đặt lại mật khẩu để bạn có thể chọn một cái mới.',
+    'forgot_password_message'   => '<p>Để khôi phục mật khẩu của bạn, vui lòng nhập địa chỉ email mà bạn đã đăng ký. Chúng tôi sẽ gửi cho bạn một liên kết để đặt lại mật khẩu mới.</p>
+            <p>Nếu bạn không nhận được email, hãy kiểm tra thư mục spam hoặc liên hệ với chúng tôi qua <a href="#" class="text-indigo-600 hover:underline">trang hỗ trợ</a> của chúng tôi.</p>',
     'email_password_reset_link' => 'Gửi Liên Kết',
 
     'guest' => 'Khách',
@@ -83,4 +84,14 @@ return [
     'resend'       => 'Gửi lại Email Xác Minh',
     'edit_profile' => 'Chỉnh sửa Hồ Sơ',
 
+    'support_login' => 'Nhập địa chỉ email và mật khẩu của bạn để truy cập vào tài khoản.',
+    'no_account' => 'Chưa có tài khoản? Đăng ký ngay.',
+    'supported' => 'Nếu bạn gặp khó khăn, vui lòng <a href="#" class="text-indigo-600 hover:underline">liên hệ với bộ phận hỗ trợ.</a>',
+    'commit' => 'Chúng tôi cam kết bảo vệ thông tin của bạn.',
+
+    'faq_label' => 'Câu hỏi thường gặp',
+    'faq_question_1' => 'Tôi không nhận được email đặt lại mật khẩu?',
+    'faq_answer_1' => 'Vui lòng kiểm tra thư mục spam hoặc liên hệ với chúng tôi qua trang hỗ trợ của chúng tôi.',
+    'faq_question_2' => 'Liên kết đặt lại mật khẩu có hết hạn không?',
+    'faq_answer_2' => 'Liên kết đặt lại mật khẩu sẽ hết hạn sau 30 phút.',
 ];

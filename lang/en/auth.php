@@ -83,4 +83,14 @@ return [
     'resend'       => 'Resend Verification Email',
     'edit_profile' => 'Edit Profile',
 
+    'support_login' => 'Enter your email and password to access your account.',
+    'no_account' => 'No account? Register now.',
+    'supported' => 'If you have any difficulties, please <a href="#" class="text-indigo-600 hover:underline">Contact support.</a>',
+    'commit' => 'We are committed to protecting your information.',
+
+    'faq_label' => 'Frequently Asked Questions',
+    'faq_question_1' => 'I did not receive the password reset email?',
+    'faq_answer_1' => 'If you did not receive the password reset email, please check your spam folder.',
+    'faq_question_2' => 'How long is the password reset link valid?',
+    'faq_answer_2' => 'The password reset link is valid for 30 minutes.',
 ];

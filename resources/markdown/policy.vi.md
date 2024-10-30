@@ -1,4 +1,4 @@
-## Chính sách bảo mật
+# Chính sách bảo mật
 
 Trang web này do <b>[tổ chức]</b> điều hành và có địa chỉ đã đăng ký là <b>Hà Nội, Việt Nam</b>. Chúng tôi cam kết bảo vệ và giữ gìn quyền riêng tư của khách truy cập khi truy cập trang web của chúng tôi hoặc giao tiếp điện tử với chúng tôi.
 

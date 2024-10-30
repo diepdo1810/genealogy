@@ -83,4 +83,14 @@ return [
     'resend'       => 'Verificatie-e-mail opnieuw verzenden',
     'edit_profile' => 'Bewerk profiel',
 
+    'support_login' => 'Voer uw e-mailadres en wachtwoord in om toegang te krijgen tot uw account.',
+    'no_account' => 'Geen account? Registreer nu!',
+    'supported' => 'Als u problemen ondervindt, neem dan <a href="#" class="text-indigo-600 hover:underline">contact op met de ondersteuning.</a>',
+    'commit' => 'We zijn toegewijd om uw informatie te beschermen.',
+
+    'faq_label' => 'Veelgestelde vragen',
+    'faq_question_1' => 'Ik heb de e-mail voor het opnieuw instellen van het wachtwoord niet ontvangen?',
+    'faq_answer_1' => 'Als u de e-mail voor het opnieuw instellen van het wachtwoord niet heeft ontvangen, controleer dan uw spammap.',
+    'faq_question_2' => 'Hoe lang is de link voor het opnieuw instellen van het wachtwoord geldig?',
+    'faq_answer_2' => 'De link voor het opnieuw instellen van het wachtwoord is 30 minuten geldig.',
 ];

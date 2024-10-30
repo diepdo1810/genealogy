@@ -1,14 +1,11 @@
-## Chào mừng 
+# Chào Mừng đến với Genealogy
 
-**Genealogy** là một ứng dụng phả hệ miễn phí và để ghi lại các thành viên gia đình và mối quan hệ của họ.
+**Genealogy** là ứng dụng phả hệ miễn phí giúp bạn ghi lại các thành viên trong gia đình và mối quan hệ của họ, hỗ trợ bạn trong hành trình tìm hiểu nguồn gốc tổ tiên của mình.
 
-<img src="https://genealogy.kreaweb.be/img/help/genealogy-000a.webp" class="rounded" alt="Genealogy-000">
+<img src="img/help/genealogy-000a.webp" class="rounded" alt="Genealogy - Ứng dụng phả hệ miễn phí giúp bạn ghi lại nguồn gốc tổ tiên">
 
-## Bản chính
-
-<a href="https://ketnoiso.cyou/" target="_blank">https://ketnoiso.cyou/</a>
-
-Bản chính này có các cây phả hệ đã được triển khai, **BRITISH ROYALS** và **KENNEDY**, **Nam Cao**.
+## Khám Phá Cây Phả Hệ
+Để khám phá thêm, hãy truy cập trang chính [Genealogy](https://ketnoiso.cyou/) để tìm hiểu về các cây phả hệ đã được triển khai, bao gồm **BRITISH ROYALS** và **KENNEDY**, cùng với các thông tin liên quan đến **Nam Cao**.
 
 <table>
     <thead>
@@ -29,5 +26,5 @@ Bản chính này có các cây phả hệ đã được triển khai, **BRITISH
     </tbody>
 </table>
 
-## Phát hành mới nhất
-- [Genealogy v1.0.0]() (2024-10-28): Cập nhật chức năng (tắt/bật) hiển thị tài liệu tham khảo (wikipedia)
+## Phiên Bản Phát Hành Mới Nhất
+- **Genealogy v1.0.0** (2024-10-28): Cập nhật chức năng tắt/bật hiển thị tài liệu tham khảo từ Wikipedia.

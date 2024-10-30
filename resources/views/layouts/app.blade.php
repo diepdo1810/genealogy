@@ -8,6 +8,9 @@
 
     <title>{{ config('app.name', 'Genealogy') }} @yield('title')</title>
 
+    {{-- meta --}}
+    <meta name="description" content="@yield('meta_description', __('sitemap.caption'))">
+
     {{-- favicon --}}
     <link rel="icon" type="image/png" href="{{ asset('img/favicon/favicon-16x16.png') }}" sizes="16x16">
     <link rel="icon" type="image/png" href="{{ asset('img/favicon/favicon-32x32.png') }}" sizes="32x32">

@@ -83,4 +83,14 @@ return [
     'resend'       => 'Bestätigungsmail erneut senden',
     'edit_profile' => 'Profil bearbeiten',
 
+    'support_login' => 'Geben Sie Ihre E-Mail-Adresse und Ihr Passwort ein, um auf Ihr Konto zuzugreifen.',
+    'no_account' => 'Kein Konto? Registrieren',
+    'supported' => 'Wenn Sie Probleme haben, wenden Sie sich bitte an den <a href="#" class="text-indigo-600 hover:underline">Support</a>.',
+    'commit' => 'Wir verpflichten uns, Ihre Informationen zu schützen.',
+
+    'faq_label' => 'Häufig gestellte Fragen',
+    'faq_question_1' => 'Ich habe die E-Mail zum Zurücksetzen des Passworts nicht erhalten?',
+    'faq_answer_1' => 'Wenn Sie die E-Mail zum Zurücksetzen des Passworts nicht erhalten haben, überprüfen Sie bitte Ihren Spam-Ordner.',
+    'faq_question_2' => 'Wie lange ist der Link zum Zurücksetzen des Passworts gültig?',
+    'faq_answer_2' => 'Der Link zum Zurücksetzen des Passworts ist 30 Minuten gültig.',
 ];

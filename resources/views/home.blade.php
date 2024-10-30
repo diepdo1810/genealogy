@@ -2,6 +2,10 @@
     &vert; {{ __('app.home') }}
 @endsection
 
+@section('meta_description')
+{{ $meta_description ?? __('sitemap.caption') }}
+@endsection
+
 <x-app-layout>
     <x-slot name="heading">
         {{ __('app.home') }}

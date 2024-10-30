@@ -4,7 +4,7 @@
 
 <x-app-layout>
     <x-slot name="heading">
-        {{ __('auth.login') }}
+        <h1 class="text-2xl font-bold">{{ __('auth.login') }}</h1>
     </x-slot>
 
     <x-authentication-card>
@@ -53,5 +53,12 @@
                 </x-ts-button>
             </div>
         </form>
+
+        <div class="mt-4 text-center text-gray-600">
+            <p>{{ __('auth.support_login') }}</p>
+            <p><a href="{{ route('register') }}" class="text-indigo-600 hover:underline">{{ __('auth.no_account') }}</a></p>
+            <p>{!! __('auth.supported') !!}</p>
+            <p>{{ __('auth.commit') }}</p>
+        </div>
     </x-authentication-card>
 </x-app-layout>

@@ -1,4 +1,4 @@
-## Trợ giúp
+# Trợ giúp
 
 <hr />
 

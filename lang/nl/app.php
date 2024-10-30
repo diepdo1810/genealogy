@@ -2,14 +2,14 @@
 
 return [
     // Menus
-    'about'            => 'Over',
+    'about'            => 'Over Ons',
     'dependencies'     => 'Afhankelijkheden',
     'help'             => 'Help',
     'home'             => 'Start',
     'menu'             => 'Menu',
     'privacy_policy'   => 'Privacybeleid',
     'session'          => 'Sessie',
-    'terms_of_service' => 'Algemene voorwaarden',
+    'terms_of_service' => 'Voorwaarden voor Gebruik',
     'useful_links'     => 'Bruikbare links',
     'impressum'        => 'Impressum',
     'log_viewer'       => 'Log Viewer',

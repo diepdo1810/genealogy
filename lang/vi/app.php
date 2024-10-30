@@ -4,7 +4,8 @@ return [
     // Menus
     'about'            => 'Giới thiệu',
     'dependencies'     => 'Các phụ thuộc',
-    'help'             => 'Trợ giúp',
+    'help'             => 'Hỗ trợ và hướng dẫn',
+    'help_footer'      => 'Trợ giúp',
     'home'             => 'Trang chủ',
     'menu'             => 'Menu',
     'privacy_policy'   => 'Chính sách bảo mật',

@@ -1,4 +1,4 @@
-## Điều khoản dịch vụ
+# Điều khoản dịch vụ
 
 Vui lòng đọc kỹ các điều khoản dịch vụ này trước khi sử dụng trang web này do <b>[tổ chức]</b> điều hành.
 

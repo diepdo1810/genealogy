@@ -16,6 +16,7 @@ class PageController extends Controller
         $homeFile = Jetstream::localizedMarkdownPath('home.md');
 
         return view('home', [
+            'meta_description' => __('sitemap.caption'),
             'home' => Str::markdown(file_get_contents($homeFile)),
         ]);
     }
@@ -25,6 +26,7 @@ class PageController extends Controller
         $aboutFile = Jetstream::localizedMarkdownPath('about.md');
 
         return view('about', [
+            'meta_description' => __('meta.about'),
             'about' => Str::markdown(file_get_contents($aboutFile)),
         ]);
     }
@@ -34,6 +36,7 @@ class PageController extends Controller
         $helpFile = Jetstream::localizedMarkdownPath('help.md');
 
         return view('help', [
+            'meta_description' => __('meta.help'),
             'help' => Str::markdown(file_get_contents($helpFile)),
         ]);
     }

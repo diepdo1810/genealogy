@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'caption' => 'Genealogy là một ứng dụng phả hệ miễn phí để ghi lại các thành viên gia đình và mối quan hệ của họ.',
+    'caption' => 'Genealogy là ứng dụng phả hệ miễn phí giúp bạn ghi lại các thành viên trong gia đình và mối quan hệ của họ, hỗ trợ bạn trong hành trình tìm hiểu nguồn gốc tổ tiên của mình',
     'geo_location ' => 'Việt Nam',
     'title' => 'Genealogy',
     'license' => 'https://vi.wikipedia.org/wiki/GNU_General_Public_License',

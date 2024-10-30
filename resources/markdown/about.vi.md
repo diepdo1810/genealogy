@@ -1,4 +1,4 @@
-## Giấy phép MIT
+# Giấy phép MIT
 
 Bản quyền &copy; : 2017 <a href="https://github.com/nafiesl/silsilah" target="_blank">Nafies Luthfi</a>
 

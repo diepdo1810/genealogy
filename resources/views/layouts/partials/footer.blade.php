@@ -55,7 +55,7 @@
 
                 <p class="mb-4">
                     <x-nav-link-footer href="{{ route('help') }}" :active="request()->routeIs('help')">
-                        {{ __('app.help') }}
+                        {{ __('app.help_footer') }}
                     </x-nav-link-footer>
                 </p>
             </div>
