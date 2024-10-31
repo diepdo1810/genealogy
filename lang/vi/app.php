@@ -3,12 +3,12 @@
 return [
     // Menus
     'about'            => 'Giới thiệu',
-    'about_title'      => 'Kết Nối Số - Giới thiệu | Lưu trữ và Kết nối Gia đình Trực tuyến.',
+    'about_title'      => 'Kết Nối Số | Giới thiệu',
     'dependencies'     => 'Các phụ thuộc',
     'help'             => 'Hỗ trợ và hướng dẫn',
     'help_footer'      => 'Trợ giúp',
     'home'             => 'Trang chủ',
-    'home_title'       => 'Kết Nối Số - Trang chủ | Lưu trữ và Kết nối Gia đình Trực tuyến.',
+    'home_title'       => 'Kết Nối Số | Trang chủ Gia Phả Trực Tuyến',
     'menu'             => 'Menu',
     'privacy_policy'   => 'Chính sách bảo mật',
     'session'          => 'Phiên',
