@@ -27,6 +27,7 @@
 </table>
 
 ## Phiên Bản Phát Hành Mới Nhất
+- **Genealogy v1.0.2** (31/10/2024): Sửa lỗi **upload ảnh**.
 - **Genealogy v1.0.1** (29/10/2024 - 1/11/2024): **Seo on page**.
 - **Genealogy v1.0.0** (28/10/2024): Cập nhật chức năng tắt/bật hiển thị tài liệu tham khảo từ Wikipedia.
 
