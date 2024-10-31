@@ -28,6 +28,16 @@
     @livewireStyles
     @filamentStyles
     @stack('styles')
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6965H77LWX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6965H77LWX');
+    </script>
 </head>
 
 <body class="font-sans antialiased">
