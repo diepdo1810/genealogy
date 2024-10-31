@@ -40,6 +40,8 @@ return [
     'login'  => 'Anmelden',
     'logout' => 'Abmelden',
 
+    'login_title' => 'Melde dich bei deinem Konto an',
+
     'need_account'              => 'Brauchst du ein Konto?',
     'new_password'              => 'Neues Passwort',
     'new_password_confirmation' => 'Neues Passwort wiederholen',
@@ -57,6 +59,8 @@ return [
     'remember_me'    => 'Angemeldet bleiben',
     'reset_password' => 'Passwort zurücksetzen',
     'role'           => 'Rolle',
+
+    'register_title' => 'Erstelle ein neues Konto',
 
     'send_reset_password_link' => 'Link zum Zurücksetzen des Passworts senden',
 

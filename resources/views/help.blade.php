@@ -1,5 +1,5 @@
 @section('title')
-    &vert; {{ __('app.help') }}
+    &vert; {{ __('app.help_footer') }}
 @endsection
 
 @section('meta_description')
@@ -8,7 +8,7 @@
 
 <x-app-layout>
     <x-slot name="heading">
-        {{ __('app.help') }}
+        {{ __('app.help_footer') }}
     </x-slot>
 
     <div class="w-full py-5 space-y-5">

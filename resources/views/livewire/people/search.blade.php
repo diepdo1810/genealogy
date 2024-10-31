@@ -67,7 +67,7 @@
             </div>
 
             <div class="flex-1 max-w-max">
-                <x-ts-button color="info" title="{{ __('app.help') }}" x-on:click="$modalOpen('search-help')" class="!pb-1 !p-1.5 !mt-1 text-sm text-white">
+                <x-ts-button color="info" title="{{ __('app.help_footer') }}" x-on:click="$modalOpen('search-help')" class="!pb-1 !p-1.5 !mt-1 text-sm text-white">
                     <x-ts-icon icon="help" />
                 </x-ts-button>
             </div>
@@ -97,7 +97,7 @@
     {{-- search help modal --}}
     <x-ts-modal id="search-help" size="6xl" blur>
         <x-slot:title>
-            <x-ts-icon icon="help" class="inline-block"/>{{ __('app.help') }}
+            <x-ts-icon icon="help" class="inline-block"/>{{ __('app.help_footer') }}
         </x-slot:title>
 
         <p>{!! __('app.people_search_help_1') !!}</p><br/>

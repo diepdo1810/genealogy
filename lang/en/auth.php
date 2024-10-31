@@ -40,6 +40,8 @@ return [
     'login'  => 'Login',
     'logout' => 'Logout',
 
+    'login_title' => 'Login to your account',
+
     'need_account'              => 'Need an Account?',
     'new_password'              => 'New Password',
     'new_password_confirmation' => 'Repeat New Password',
@@ -57,6 +59,8 @@ return [
     'remember_me'    => 'Remember me',
     'reset_password' => 'Reset Password',
     'role'           => 'Role',
+
+    'register_title' => 'Create a new account',
 
     'send_reset_password_link' => 'Send Reset Password Link',
 

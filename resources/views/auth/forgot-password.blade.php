@@ -6,6 +6,10 @@
     <meta name="robots" content="noindex, nofollow">
 @endsection
 
+@section('meta_description')
+    {{ __('auth.forgot_password') }}
+@endsection
+
 <x-app-layout>
     <x-slot name="heading">
         {{ __('auth.forgot_password') }}

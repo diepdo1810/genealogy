@@ -40,6 +40,8 @@ return [
     'login'  => 'Aanmelden',
     'logout' => 'Afmelden',
 
+    'login_title' => 'Meld u aan bij uw account',
+
     'need_account'              => 'Een account nodig?',
     'new_password'              => 'Nieuw paswoord',
     'new_password_confirmation' => 'Bevestig het nieuwe paswoord',
@@ -57,6 +59,8 @@ return [
     'remember_me'    => 'Onthou mij',
     'reset_password' => 'Reset Password',
     'role'           => 'Rol',
+
+    'register_title' => 'Maak een nieuw account aan',
 
     'send_reset_password_link' => 'Stuur Reset Password link',
 

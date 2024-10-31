@@ -3,9 +3,11 @@
 return [
     // Menus
     'about'            => 'Over Ons',
+    'about_title'      => 'Verbinding40 - Over Ons | Online Familie Opslag en Verbinding.',
     'dependencies'     => 'Afhankelijkheden',
     'help'             => 'Help',
     'home'             => 'Start',
+    'home_title'       => 'Verbinding40 - Start | Online Familie Opslag en Verbinding.',
     'menu'             => 'Menu',
     'privacy_policy'   => 'Privacybeleid',
     'session'          => 'Sessie',

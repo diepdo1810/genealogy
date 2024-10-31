@@ -217,7 +217,7 @@
 
             <x-nav-link-responsive href="{{ route('help') }}" :active="request()->routeIs('help')">
                 <x-ts-icon icon="help" class="inline-block mr-1 size-5" />
-                {{ __('app.help') }}
+                {{ __('app.help_footer') }}
             </x-nav-link-responsive>
         </div>
 

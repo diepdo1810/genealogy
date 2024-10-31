@@ -1,5 +1,5 @@
 @section('title')
-    &vert; {{ __('app.about') }}
+    &vert; {{ __('app.about_title') }}
 @endsection
 
 @section('meta_description')

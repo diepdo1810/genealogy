@@ -2,6 +2,10 @@
     &vert; {{ __('app.privacy_policy') }}
 @endsection
 
+@section('meta_description')
+    {{ $meta_description ?? __('meta.policy') }}
+@endsection
+
 <x-app-layout>
     <x-slot name="heading">
         {{ __('app.privacy_policy') }}

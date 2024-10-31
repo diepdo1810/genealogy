@@ -1,5 +1,5 @@
 @section('title')
-    &vert; {{ __('auth.register') }}
+    &vert; {{ __('auth.register_title') }}
 @endsection
 
 @section('robots')

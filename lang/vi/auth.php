@@ -41,6 +41,8 @@ return [
     'login'  => 'Đăng Nhập',
     'logout' => 'Đăng Xuất',
 
+    'login_title' => 'Đăng nhập vào tài khoản của bạn',
+
     'need_account'              => 'Cần một tài khoản?',
     'new_password'              => 'Mật Khẩu Mới',
     'new_password_confirmation' => 'Nhập lại Mật Khẩu Mới',
@@ -55,6 +57,8 @@ return [
     'permissions'           => 'Quyền',
 
     'register'       => 'Đăng Ký',
+    'register_title' => 'Tạo tài khoản mới',
+
     'remember_me'    => 'Ghi nhớ tôi',
     'reset_password' => 'Đặt Lại Mật Khẩu',
     'role'           => 'Vai trò',

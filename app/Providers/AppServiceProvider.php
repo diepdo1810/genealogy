@@ -148,7 +148,15 @@ class AppServiceProvider extends ServiceProvider
             'github'  => 'https://github.com/MGeurts/genealogy',
             'license' => 'MIT License',
         ]);
+
+        AboutCommand::add('Server', [
+            'PHP'     => phpversion(),
+            'Laravel' => app()->version(),
+            'OS'      => php_uname(),
+        ]);
         // -----------------------------------------------------------------------
+
+        $this->configureUrl();
     }
 
     // -----------------------------------------------------------------------

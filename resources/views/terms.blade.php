@@ -2,6 +2,10 @@
     &vert; {{ __('app.terms_of_service') }}
 @endsection
 
+@section('meta_description')
+    {{ $meta_description ?? __('meta.terms') }}
+@endsection
+
 <x-app-layout>
     <x-slot name="heading">
         {{ __('app.terms_of_service') }}

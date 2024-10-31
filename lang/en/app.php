@@ -3,9 +3,11 @@
 return [
     // Menus
     'about'            => 'About',
+    'about_title'      => 'Connection40 - About | Online family storage and connection.',
     'dependencies'     => 'Dependencies',
     'help'             => 'Help',
     'home'             => 'Home',
+    'home_title'       => 'Connection40 - Home | Online family storage and connection.',
     'menu'             => 'Menu',
     'privacy_policy'   => 'Privacy policy',
     'session'          => 'Session',

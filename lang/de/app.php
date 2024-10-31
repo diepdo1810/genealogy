@@ -3,9 +3,11 @@
 return [
     // Menus
     'about'            => 'Über',
+    'about_title'      => 'Verbindung40 - Über | Online-Familienaufbewahrung und -verbindung.',
     'dependencies'     => 'Abhängigkeiten',
     'help'             => 'Hilfe',
     'home'             => 'Start',
+    'home_title'       => 'Verbindung40 - Start | Online-Familienaufbewahrung und -verbindung.',
     'menu'             => 'Menü',
     'privacy_policy'   => 'Datenschutzrichtlinien',
     'session'          => 'Sitzung',
