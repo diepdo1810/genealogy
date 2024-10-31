@@ -2,6 +2,10 @@
     &vert; {{ __('auth.register') }}
 @endsection
 
+@section('robots')
+    <meta name="robots" content="noindex, nofollow">
+@endsection
+
 <x-app-layout>
     <x-slot name="heading">
         <h1 class="text-2xl font-bold">{{ __('auth.register') }}</h1>

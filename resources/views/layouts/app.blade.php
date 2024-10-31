@@ -8,6 +8,9 @@
 
     <title>{{ config('app.name', 'Genealogy') }} @yield('title')</title>
 
+    {{-- robots --}}
+    @yield('robots')
+
     {{-- meta --}}
     <meta name="description" content="@yield('meta_description', __('sitemap.caption'))">
 

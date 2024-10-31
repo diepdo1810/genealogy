@@ -102,7 +102,7 @@
 
                 {{-- summary --}}
                 <div class="col-span-6">
-                    <x-ts-textarea wire:model="profileForm.summary" id="summary" label="{{ __('person.summary') }} :"
+                    <x-ts-textarea wire:model="/home/diepdp/Pictures/Screenshots/genealogy-022.pngprofileForm.summary" id="summary" label="{{ __('person.summary') }} :"
                         wire:dirty.class="bg-warning-200 dark:text-black" autocomplete="summary" maxlength="65535"
                         count />
                 </div>
