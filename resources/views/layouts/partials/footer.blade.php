@@ -1,3 +1,4 @@
+
 <footer class="text-center print:hidden text-neutral-600 dark:text-neutral-200 lg:text-left">
     <div class="flex items-center justify-center p-2 border-b-2 border-neutral-200 dark:border-neutral-500 lg:justify-between bg-neutral-200 dark:bg-neutral-700">
         <div class="hidden mr-12 lg:block">
@@ -48,13 +49,13 @@
                 <x-hr.narrow class="w-48 h-1 my-4 bg-gray-100 border-0 rounded max-md:mx-auto dark:bg-gray-700" />
 
                 <p class="mb-4">
-                    <x-nav-link-footer href="{{ route('about') }}" :active="request()->routeIs('about')">
+                    <x-nav-link-footer href="{{ route(getLocalizedRoute('about', 'vi')) }}" :active="request()->routeIs('about')">
                         {{ __('app.about') }}
                     </x-nav-link-footer>
                 </p>
 
                 <p class="mb-4">
-                    <x-nav-link-footer href="{{ route('help') }}" :active="request()->routeIs('help')">
+                    <x-nav-link-footer href="{{ route(getLocalizedRoute('help', 'vi')) }}" :active="request()->routeIs('help')">
                         {{ __('app.help_footer') }}
                     </x-nav-link-footer>
                 </p>
@@ -66,13 +67,13 @@
                 <x-hr.narrow class="w-48 h-1 my-4 bg-gray-100 border-0 rounded max-md:mx-auto dark:bg-gray-700" />
 
                 <p class="mb-4">
-                    <x-nav-link-footer href="{{ url('terms-of-service') }}" :active="request()->is('terms-of-service')">
+                    <x-nav-link-footer href="{{ route(getLocalizedRoute('terms-of-service', 'vi')) }}" :active="request()->is('terms-of-service')">
                         {{ __('app.terms_of_service') }}
                     </x-nav-link-footer>
                 </p>
 
                 <p class="mb-4">
-                    <x-nav-link-footer href="{{ url('privacy-policy') }}" :active="request()->is('privacy-policy')">
+                    <x-nav-link-footer href="{{ route('privacy-policy') }}" :active="request()->is('privacy-policy')">
                         {{ __('app.privacy_policy') }}
                     </x-nav-link-footer>
                 </p>

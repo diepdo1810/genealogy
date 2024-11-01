@@ -29,7 +29,7 @@
                         {{ __('birthday.birthdays') }}
                     </x-nav-link>
 
-                    <x-nav-link href="{{ route('help') }}" :active="request()->routeIs('help')">
+                    <x-nav-link href="{{ route(getLocalizedRoute('help', 'vi')) }}" :active="request()->routeIs('help')">
                         <x-ts-icon icon="help" class="mr-1 size-5" />
                         {{ __('app.help_footer') }}
                     </x-nav-link>
@@ -215,7 +215,7 @@
                 {{ __('birthday.birthdays') }}
             </x-nav-link-responsive>
 
-            <x-nav-link-responsive href="{{ route('help') }}" :active="request()->routeIs('help')">
+            <x-nav-link-responsive href="{{ route(getLocalizedRoute('help', 'vi')) }}" :active="request()->routeIs('help')">
                 <x-ts-icon icon="help" class="inline-block mr-1 size-5" />
                 {{ __('app.help_footer') }}
             </x-nav-link-responsive>

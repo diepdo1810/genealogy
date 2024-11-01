@@ -40,4 +40,25 @@ class PageController extends Controller
             'help' => Str::markdown(file_get_contents($helpFile)),
         ]);
     }
+
+    public function termsOfService(): View
+    {
+
+        $termsOfServiceFile = Jetstream::localizedMarkdownPath('terms.md');
+
+        return view('terms', [
+            'meta_description' => __('meta.terms-of-service'),
+            'terms' => Str::markdown(file_get_contents($termsOfServiceFile)),
+        ]);
+    }
+
+    public function privacyPolicy(): View
+    {
+        $privacyPolicyFile = Jetstream::localizedMarkdownPath('policy.md');
+
+        return view('policy', [
+            'meta_description' => __('meta.privacy-policy'),
+            'policy' => Str::markdown(file_get_contents($privacyPolicyFile)),
+        ]);
+    }
 }

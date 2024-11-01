@@ -47,6 +47,10 @@ class SitemapGenerateCommand extends Command
                 return $url;
             })
             ->getSitemap()
+            ->add(Url::create('/gioi-thieu'))
+            ->add(Url::create('/tro-giup'))
+            ->add(Url::create('/dieu-khoan-su-dung'))
+            ->add(Url::create('/chinh-sach-bao-mat'))
             ->writeToFile(public_path('sitemap.xml'));
     }
 }

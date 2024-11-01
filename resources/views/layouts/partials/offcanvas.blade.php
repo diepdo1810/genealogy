@@ -149,7 +149,7 @@
                 <x-hr.narrow class="w-full h-1 my-1 bg-gray-100 border-0 rounded max-md:mx-auto dark:bg-gray-700" />
 
                 <p>
-                    <x-nav-link-responsive href="{{ route('help') }}" :active="request()->routeIs('help')">{{ __('app.help') }}</x-nav-link-responsive>
+                    <x-nav-link-responsive href="{{ route(getLocalizedRoute('help', 'vi')) }}" :active="request()->routeIs('help')">{{ __('app.help') }}</x-nav-link-responsive>
                 </p>
             </div>
 
@@ -168,7 +168,7 @@
                 <div><x-hr.narrow class="w-full h-1 my-1 bg-gray-100 border-0 rounded max-md:mx-auto dark:bg-gray-700" /></div>
 
                 <p>
-                    <x-nav-link-responsive href="{{ route('help') }}" :active="request()->routeIs('help')">
+                    <x-nav-link-responsive href="{{ route(getLocalizedRoute('help', 'vi')) }}" :active="request()->routeIs('help')">
                         {{ __('app.help_footer') }}
                     </x-nav-link-responsive>
                 </p>

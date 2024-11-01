@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Spatie\Sitemap\SitemapGenerator;
-use Spatie\Sitemap\Tags\Url;
 
 // -----------------------------------------------------------------------------------
 // frontend routes
@@ -10,7 +8,13 @@ use Spatie\Sitemap\Tags\Url;
 Route::controller(App\Http\Controllers\Front\PageController::class)->group(function () {
     Route::get('/', 'home')->name('home');
     Route::get('about', 'about')->name('about');
+    Route::get('gioi-thieu', 'about')->name('gioi-thieu');
     Route::get('help', 'help')->name('help');
+    Route::get('tro-giup', 'help')->name('tro-giup');
+    Route::get('terms-of-service', 'termsOfService')->name('terms-of-service');
+    Route::get('dieu-khoan-su-dung', 'termsOfService')->name('dieu-khoan-su-dung');
+    Route::get('privacy-policy', 'privacyPolicy')->name('privacy-policy');
+    Route::get('chinh-sach-bao-mat', 'privacyPolicy')->name('chinh-sach-bao-mat');
 });
 
 // -----------------------------------------------------------------------------------
