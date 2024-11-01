@@ -96,6 +96,11 @@
                             {{ __('userlog.users_log') }}
                         </x-nav-link-responsive>
                     </p>
+                    <p>
+                        <x-nav-link-responsive href="https://octopus-app-qlh8q.ondigitalocean.app/" target="_blank">
+                            BACK LOG
+                        </x-nav-link-responsive>
+                    </p>
                 </div>
 
                 <div>
