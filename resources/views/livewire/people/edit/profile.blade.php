@@ -23,7 +23,7 @@
                 {{-- firstname --}}
                 <div class="col-span-6 md:col-span-3">
                     <x-ts-input wire:model="profileForm.firstname" id="firstname" label="{{ __('person.firstname') }} :"
-                        wire:dirty.class="bg-warning-200 dark:text-black" required autofocus />
+                        wire:dirty.class="bg-warning-200 dark:text-black" />
                 </div>
 
                 {{-- surname --}}

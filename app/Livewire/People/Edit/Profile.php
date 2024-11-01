@@ -61,21 +61,7 @@ class Profile extends Component
 
     public function isDirty(): bool
     {
-        return
-        $this->profileForm->firstname != $this->person->firstname or
-        $this->profileForm->surname != $this->person->surname or
-        $this->profileForm->birthname != $this->person->birthname or
-        $this->profileForm->nickname != $this->person->nickname or
-
-        $this->profileForm->sex != $this->person->sex or
-        $this->profileForm->gender_id != $this->person->gender_id or
-
-        $this->profileForm->yob != $this->person->yob or
-        $this->profileForm->dob != ($this->person->dob ? Carbon::parse($this->person->dob)->format('Y-m-d') : null) or
-        $this->profileForm->pob != $this->person->pob or
-
-        $this->profileForm->summary != $this->person->summary
-        or $this->profileForm->show_wiki != $this->person->show_wiki;
+        return true;
     }
 
     // ------------------------------------------------------------------------------
