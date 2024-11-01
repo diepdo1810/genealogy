@@ -22,6 +22,13 @@ class LogAllRequests
         $response = $next($request);
 
         // -----------------------------------------------------------------------
+        // LARAVEL-LIVEWIRE : ignore preview-file requests
+        // -----------------------------------------------------------------------
+        if (implode('/', array_slice(explode('/', $request->path()), 0, 2)) === 'livewire/preview-file') {
+            return $response;
+        }
+
+        // -----------------------------------------------------------------------
         // LOG-VIEWER : log all requests
         // -----------------------------------------------------------------------
         $contents = json_decode($response->getContent(), true, 512);

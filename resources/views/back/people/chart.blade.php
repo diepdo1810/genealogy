@@ -72,7 +72,7 @@
             </div>
 
             {{-- uncles/ants & cousins --}}
-            <div class="flex flex-row hidden">
+            <div class="flex flex-row">
                 <div class="p-2 font-medium border basis-1/5 text-end">
                     {{ trans('person.uncles') }} & {{ trans('person.aunts') }} :<br />
                     {{ trans('person.cousins') }} :
