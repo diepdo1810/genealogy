@@ -7,6 +7,7 @@ return [
     'dependencies'     => 'Các phụ thuộc',
     'help'             => 'Hỗ trợ và hướng dẫn',
     'help_footer'      => 'Trợ giúp',
+    'help_title'       => 'Kết Nối Số | Hỗ trợ và hướng dẫn',
     'home'             => 'Trang chủ',
     'home_title'       => 'Kết Nối Số | Trang chủ Gia Phả Trực Tuyến',
     'menu'             => 'Menu',

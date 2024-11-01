@@ -6,6 +6,8 @@ return [
     'about_title'      => 'Connection40 - About | Online family storage and connection.',
     'dependencies'     => 'Dependencies',
     'help'             => 'Help',
+    'help_footer'      => 'Help',
+    'help_title'       => 'Connection40 - Help | Online family storage and connection.',
     'home'             => 'Home',
     'home_title'       => 'Connection40 - Home | Online family storage and connection.',
     'menu'             => 'Menu',

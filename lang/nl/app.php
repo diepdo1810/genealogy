@@ -6,6 +6,8 @@ return [
     'about_title'      => 'Verbinding40 - Over Ons | Online Familie Opslag en Verbinding.',
     'dependencies'     => 'Afhankelijkheden',
     'help'             => 'Help',
+    'help_footer'      => 'Help',
+    'help_title'       => 'Verbinding40 - Help | Online Familie Opslag en Verbinding.',
     'home'             => 'Start',
     'home_title'       => 'Verbinding40 - Start | Online Familie Opslag en Verbinding.',
     'menu'             => 'Menu',

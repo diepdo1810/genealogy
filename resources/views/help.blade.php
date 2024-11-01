@@ -1,5 +1,5 @@
 @section('title')
-    &vert; {{ __('app.help_footer') }}
+    &vert; {{ __('app.help_title') }}
 @endsection
 
 @section('meta_description')

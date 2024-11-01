@@ -6,6 +6,8 @@ return [
     'about_title'      => 'Verbindung40 - Über | Online-Familienaufbewahrung und -verbindung.',
     'dependencies'     => 'Abhängigkeiten',
     'help'             => 'Hilfe',
+    'help_footer'      => 'Hilfe',
+    'help_title'       => 'Verbindung40 - Hilfe | Online-Familienaufbewahrung und -verbindung.',
     'home'             => 'Start',
     'home_title'       => 'Verbindung40 - Start | Online-Familienaufbewahrung und -verbindung.',
     'menu'             => 'Menü',
