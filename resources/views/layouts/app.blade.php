@@ -33,13 +33,13 @@
     @stack('styles')
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6965H77LWX"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P6G7CLZBE1"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-        gtag('config', 'G-6965H77LWX');
+      gtag('config', 'G-P6G7CLZBE1');
     </script>
 </head>
 
